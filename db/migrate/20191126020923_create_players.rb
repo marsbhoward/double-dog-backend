@@ -4,9 +4,10 @@ class CreatePlayers < ActiveRecord::Migration[6.0]
       t.string :name
       t.integer :score, :default =>0
       t.integer :shots, :default =>0	
-      t.references :game,null: false, foreign_key: true
+      t.integer :game_id 
 
       t.timestamps
     end
+    add_index :players, :game_id
   end
 end

@@ -39,5 +39,6 @@ module DoubleDogApi
         end
     end
     config.api_only = true
+   
   end
 end

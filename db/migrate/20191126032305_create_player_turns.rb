@@ -1,11 +1,13 @@
 class CreatePlayerTurns < ActiveRecord::Migration[6.0]
   def change
     create_table :player_turns do |t|
-      t.references :player,null: false, foreign_key: true
-      t.references :dare,null: false, foreign_key: true
+      t.integer :player_id
+      t.integer :dare_id
 
       t.timestamps
     end
+    add_index :player_turns, :player_id
+    add_index :player_turns, :dare_id
   end
 end
 j

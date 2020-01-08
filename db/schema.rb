@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 2019_12_04_152030) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "dares", force: :cascade do |t|
     t.string "text"
     t.integer "points"
@@ -36,8 +39,8 @@ ActiveRecord::Schema.define(version: 2019_12_04_152030) do
   end
 
   create_table "player_turns", force: :cascade do |t|
-    t.integer "player_id", null: false
-    t.integer "dare_id", null: false
+    t.integer "player_id"
+    t.integer "dare_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["dare_id"], name: "index_player_turns_on_dare_id"
@@ -48,15 +51,10 @@ ActiveRecord::Schema.define(version: 2019_12_04_152030) do
     t.string "name"
     t.integer "score", default: 0
     t.integer "shots", default: 0
-    t.integer "game_id", null: false
+    t.integer "game_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["game_id"], name: "index_players_on_game_id"
   end
 
-  add_foreign_key "game_turns", "games"
-  add_foreign_key "game_turns", "player_turns"
-  add_foreign_key "player_turns", "dares"
-  add_foreign_key "player_turns", "players"
-  add_foreign_key "players", "games"
 end
