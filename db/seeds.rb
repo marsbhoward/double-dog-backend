@@ -151,7 +151,7 @@ Dare.create(text: "Everyone wearing glasses take a shot", :points => 1, :shots=>
 Dare.create(text: "Everyone wearing black take a shot", :points => 1, :shots=>0)
 Dare.create(text: "Exchange socks with [RandomPlayer]", :points => 1, :shots=>1)
 Dare.create(text: "Rock paper scissors with [RandomPlayer], loser takes a shot", :points => 1, :shots=>2)
-Dare.create(text: "Pretend  to be different animals while the group guesses what you are. you have 15 seconds to get at least 5", :points => 1, :shots=>1)
+Dare.create(text: "Pretend to be different animals while the group guesses what you are. you have 15 seconds to get at least 5", :points => 1, :shots=>1)
 Dare.create(text: "Let [RandomPlayer] give you a complete makeover (makeup and clothes) with whatever is available", :points => 1, :shots=>2)
 Dare.create(text: "The person before you takes a shot and you lose a point", :points => -1, :shots=>1)
 Dare.create(text: "Oldest person takes a shot, if its you take two", :points => 1, :shots=>1)
@@ -159,3 +159,10 @@ Dare.create(text: "Everyone must speak in one syllable words until it is your tu
 Dare.create(text: "You are Santa let [RandomPlayer] sit on your lap and tell you what they want for Christmas", :points => 1, :shots=>1)
 Dare.create(text: "Get on your knees and beg [RandomPlayer] to not to give you a shot. Then they decide if you take one or not,", :points => 1, :shots=>2)
 Dare.create(text: "Take a shot out of [RandomPlayer]'s bellybutton", :points => 2, :shots=>1)
+Dare.create(text: "Invisible hula hoop for a minute straight, if you stop or the group thinks it fell take two shots", :points =>2, :shots=>1 )
+Dare.create(text: "Balance on one foot for a minute straight thinks it fell take a shots", :points =>2, :shots=>1 )
+Dare.create(text: "Every one pick either heads or tails, then flip a coin. Everyone who called it wrong take a shot ", :points =>1, :shots=>0 )
+Dare.create(text: "Arm wrestle a person of the groups choosing, looser takes a shot", :points => 1, :shots=>1)
+Dare.create(text: "You and [RandomPlayer] must have a rap battle. The rest of the group decides who wins, and loser takes two shots", :points => 1, :shots=>1)
+
+
