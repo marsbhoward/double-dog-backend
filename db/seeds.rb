@@ -162,8 +162,8 @@ Dare.create(text: "Get on your knees and beg [RandomPlayer] to not to give you a
 Dare.create(text: "Take a shot out of [RandomPlayer]'s bellybutton", :points => 2, :shots=>1)
 
 Dare.create(text: "Invisible hula hoop for a minute straight, if you stop or the group thinks it fell take two shots", :points =>2, :shots=>1 )
-Dare.create(text: "Balance on one foot for a minute straight thinks it fell take a shots", :points =>2, :shots=>1 )
-Dare.create(text: "Every one pick either heads or tails, then flip a coin. Everyone who called it wrong take a shot ", :points =>1, :shots=>0 )
+Dare.create(text: "Balance on one foot for a minute straight. if you lose your balance take two shots", :points =>2, :shots=>1 )
+Dare.create(text: "Every one pick either heads or tails. Flip a coin and everyone who called it wrong take a shot ", :points =>1, :shots=>0 )
 Dare.create(text: "Arm wrestle a person of the groups choosing, looser takes a shot", :points => 1, :shots=>1)
 Dare.create(text: "You and [RandomPlayer] must have a rap battle. The rest of the group decides who wins, and loser takes two shots", :points => 1, :shots=>1)
 Dare.create(text: "Everyone must take off thier socks and put them in a pile. You must put them back on the correct feet in a minute", :points => 2, :shots=>1)
