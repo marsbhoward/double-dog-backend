@@ -5,7 +5,7 @@ class PlayersController < ApplicationController
   end
 
   def show()
-    players= players.all
+    players= Game.all.players.all
     render json: players
   end
 
